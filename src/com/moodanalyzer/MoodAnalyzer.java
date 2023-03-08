@@ -1,7 +1,12 @@
 package com.moodanalyzer;
 
 public class MoodAnalyzer {
-    public static void main(String[] args) {
-        System.out.println("Welcome To Mood Analyzer Program");
+
+    public String moodAnalyze(String message) {
+        if (message == "I Am In Sad Mood") {
+            return "SAD";
+        } else {
+            return "HAPPY";
+        }
     }
 }
