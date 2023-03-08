@@ -12,7 +12,7 @@ public class MoodAnalyzerTest {
             MoodAnalyzer moodAnalyzer = new MoodAnalyzer();
             String analyzedMood = moodAnalyzer.moodAnalyze("Invalid mood");
             Assert.assertEquals("SAD", analyzedMood);
-        }catch (AssertionError e){
+        } catch (AssertionError e) {
             System.out.println("SAD");
         }
 
@@ -22,7 +22,7 @@ public class MoodAnalyzerTest {
     public void passMessageHappyWhenReturnsNotSad() {
         MoodAnalyzer moodAnalyzer = new MoodAnalyzer();
         String analyzedMood = moodAnalyzer.moodAnalyze("I Am In Happy Mood");
-        Assert.assertEquals("HAPPY",analyzedMood);
+        Assert.assertEquals("HAPPY", analyzedMood);
     }
 
 }
