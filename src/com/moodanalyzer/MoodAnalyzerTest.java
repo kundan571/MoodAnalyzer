@@ -8,15 +8,15 @@ public class MoodAnalyzerTest {
 
     @Test
     public void passMessageSadWhenReturnsSad() {
-        MoodAnalyzer moodAnalyzer = new MoodAnalyzer();
-        String analyzedMood = moodAnalyzer.moodAnalyze("I Am In Sad Mood");
+        MoodAnalyzer moodAnalyzer = new MoodAnalyzer("I Am In Sad Mood");
+        String analyzedMood = moodAnalyzer.moodAnalyze();
         Assert.assertEquals("SAD", analyzedMood);
     }
 
     @Test
     public void passMessageHappyWhenReturnsNotSad() {
-        MoodAnalyzer moodAnalyzer = new MoodAnalyzer();
-        String analyzedMood = moodAnalyzer.moodAnalyze("I Am In Any Mood");
+        MoodAnalyzer moodAnalyzer = new MoodAnalyzer("I Am In Happy Mood");
+        String analyzedMood = moodAnalyzer.moodAnalyze();
         Assert.assertEquals("HAPPY", analyzedMood);
     }
 
